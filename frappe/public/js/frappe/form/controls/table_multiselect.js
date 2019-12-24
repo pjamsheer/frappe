@@ -110,6 +110,7 @@ frappe.ui.form.ControlTableMultiSelect = frappe.ui.form.ControlLink.extend({
 		const link_field = this.get_link_field();
 		const values = this.rows.map(row => row[link_field.fieldname]);
 		this.set_pill_html(values);
+		console.log(this.get_input_value);
 	},
 	set_pill_html(values) {
 		const html = values
